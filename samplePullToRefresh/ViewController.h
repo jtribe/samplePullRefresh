@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+typedef enum {
+    JTFullImagePulling = 0,
+    JTFullImageNormal,
+    JTFullImageLoading
+} JTFullImageState;
+
+@interface ViewController : UIViewController <UIScrollViewDelegate>
 
 @end

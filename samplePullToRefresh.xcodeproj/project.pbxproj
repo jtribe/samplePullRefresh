@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F65CD3D317BC695300CFD59E /* outerImage_activated.png in Resources */ = {isa = PBXBuildFile; fileRef = F65CD3D217BC695300CFD59E /* outerImage_activated.png */; };
+		F65CD3D517BC709500CFD59E /* innerImage_activated.png in Resources */ = {isa = PBXBuildFile; fileRef = F65CD3D417BC709500CFD59E /* innerImage_activated.png */; };
 		F675A6B317BB6295005DD977 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F675A6B217BB6295005DD977 /* UIKit.framework */; };
 		F675A6B517BB6295005DD977 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F675A6B417BB6295005DD977 /* Foundation.framework */; };
 		F675A6B717BB6295005DD977 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F675A6B617BB6295005DD977 /* CoreGraphics.framework */; };
@@ -18,9 +20,15 @@
 		F675A6C917BB6295005DD977 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F675A6C817BB6295005DD977 /* Default-568h@2x.png */; };
 		F675A6CC17BB6295005DD977 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F675A6CA17BB6295005DD977 /* MainStoryboard.storyboard */; };
 		F675A6CF17BB6295005DD977 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F675A6CE17BB6295005DD977 /* ViewController.m */; };
+		F675A6D617BB62BA005DD977 /* 0b8944824bbcdae41dc08d296e938628.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F675A6D517BB62BA005DD977 /* 0b8944824bbcdae41dc08d296e938628.jpeg */; };
+		F675A6D917BB62C4005DD977 /* innerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F675A6D717BB62C4005DD977 /* innerImage.png */; };
+		F675A6DA17BB62C4005DD977 /* outerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F675A6D817BB62C4005DD977 /* outerImage.png */; };
+		F675A6DC17BB6590005DD977 /* PullToFullImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F675A6DB17BB6590005DD977 /* PullToFullImageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F65CD3D217BC695300CFD59E /* outerImage_activated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outerImage_activated.png; sourceTree = "<group>"; };
+		F65CD3D417BC709500CFD59E /* innerImage_activated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = innerImage_activated.png; sourceTree = "<group>"; };
 		F675A6AF17BB6295005DD977 /* samplePullToRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = samplePullToRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F675A6B217BB6295005DD977 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F675A6B417BB6295005DD977 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +45,10 @@
 		F675A6CB17BB6295005DD977 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		F675A6CD17BB6295005DD977 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F675A6CE17BB6295005DD977 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F675A6D517BB62BA005DD977 /* 0b8944824bbcdae41dc08d296e938628.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0b8944824bbcdae41dc08d296e938628.jpeg; sourceTree = "<group>"; };
+		F675A6D717BB62C4005DD977 /* innerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = innerImage.png; sourceTree = "<group>"; };
+		F675A6D817BB62C4005DD977 /* outerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outerImage.png; sourceTree = "<group>"; };
+		F675A6DB17BB6590005DD977 /* PullToFullImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PullToFullImageView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +95,18 @@
 		F675A6B817BB6295005DD977 /* samplePullToRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				F65CD3D417BC709500CFD59E /* innerImage_activated.png */,
+				F65CD3D217BC695300CFD59E /* outerImage_activated.png */,
 				F675A6C117BB6295005DD977 /* AppDelegate.h */,
 				F675A6C217BB6295005DD977 /* AppDelegate.m */,
 				F675A6CA17BB6295005DD977 /* MainStoryboard.storyboard */,
 				F675A6CD17BB6295005DD977 /* ViewController.h */,
 				F675A6CE17BB6295005DD977 /* ViewController.m */,
+				F675A6D517BB62BA005DD977 /* 0b8944824bbcdae41dc08d296e938628.jpeg */,
+				F675A6D717BB62C4005DD977 /* innerImage.png */,
+				F675A6D817BB62C4005DD977 /* outerImage.png */,
 				F675A6B917BB6295005DD977 /* Supporting Files */,
+				F675A6DB17BB6590005DD977 /* PullToFullImageView.xib */,
 			);
 			path = samplePullToRefresh;
 			sourceTree = "<group>";
@@ -163,6 +181,12 @@
 				F675A6C717BB6295005DD977 /* Default@2x.png in Resources */,
 				F675A6C917BB6295005DD977 /* Default-568h@2x.png in Resources */,
 				F675A6CC17BB6295005DD977 /* MainStoryboard.storyboard in Resources */,
+				F675A6D617BB62BA005DD977 /* 0b8944824bbcdae41dc08d296e938628.jpeg in Resources */,
+				F675A6D917BB62C4005DD977 /* innerImage.png in Resources */,
+				F675A6DA17BB62C4005DD977 /* outerImage.png in Resources */,
+				F675A6DC17BB6590005DD977 /* PullToFullImageView.xib in Resources */,
+				F65CD3D317BC695300CFD59E /* outerImage_activated.png in Resources */,
+				F65CD3D517BC709500CFD59E /* innerImage_activated.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +322,7 @@
 				F675A6D417BB6295005DD977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
