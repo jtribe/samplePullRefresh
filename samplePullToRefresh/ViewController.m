@@ -66,7 +66,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    CGFloat PULL_DOWN_AMOUNT = self.pullFullImageView.frame.size.height;
+    CGFloat PULL_DOWN_AMOUNT = self.pullFullImageView.frame.size.height; //60
     static CGFloat AMOUNT_TO_GROW = 15.0f;
     if (scrollView.contentOffset.y < 0.0f && scrollView.contentOffset.y > -PULL_DOWN_AMOUNT && self.pullState != JTFullImageLoading)
     {
@@ -74,11 +74,11 @@
         [self.pullFullImageView moveOriginTo:CGPointMake(0, self.originalYPos - scrollView.contentOffset.y)];
         
         //Grow inner image view based on contentOffset
-        CGFloat growingAmount = scrollView.contentOffset.y/(PULL_DOWN_AMOUNT/AMOUNT_TO_GROW);
-        self.innerImageView.frame = CGRectMake(self.originalFrame.origin.x + growingAmount,
-                                          self.originalFrame.origin.y + growingAmount,
-                                          self.originalFrame.size.width - growingAmount * 2,
-                                          self.originalFrame.size.height - growingAmount * 2);
+        CGFloat growingAmount = -scrollView.contentOffset.y/(PULL_DOWN_AMOUNT/AMOUNT_TO_GROW);
+        self.innerImageView.frame = CGRectMake(self.originalFrame.origin.x - growingAmount,
+                                          self.originalFrame.origin.y - growingAmount,
+                                          self.originalFrame.size.width + growingAmount * 2,
+                                          self.originalFrame.size.height + growingAmount * 2);
         
         //Cancel from pulling state back to normal state
         if (self.pullState == JTFullImagePulling)
@@ -98,8 +98,7 @@
 {
     CGFloat PULL_DOWN_AMOUNT = self.pullFullImageView.frame.size.height;
     if (scrollView.contentOffset.y <= -PULL_DOWN_AMOUNT)
-    {
-        [self.pullFullImageView moveOriginTo:CGPointMake(0, self.originalYPos + PULL_DOWN_AMOUNT)];
+    { 
         [self setState:JTFullImageLoading];
     }
 }
